@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { ProductsContext } from "./context";
+
 function App() {
+	const {products} = useContext(ProductsContext)
 	return (
 		<div className='App'>
 			<h1 className='font-Manrope font-bold'>App</h1>
