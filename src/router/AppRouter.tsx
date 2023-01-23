@@ -1,77 +1,16 @@
-import { Routes, Route, Outlet, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import { Navigation } from './Navigation';
+import { CategoryPage, CheckoutPage, HomePage, ProductDetailPage } from '../pages';
 
 export default function AppRouter() {
 	return (
 		<Routes>
-			<Route path='/' element={<Layout />}>
-				<Route index element={<Home />} />
-				<Route path='about' element={<About />} />
-				<Route path='dashboard' element={<Dashboard />} />
-				<Route path='*' element={<NoMatch />} />
+			<Route path='/' element={<Navigation />}>
+				<Route index element={<HomePage />} />
+				<Route path='/category/:category' element={<CategoryPage />} />
+				<Route path='/product-detail/:category/:id' element={<ProductDetailPage />} />
+				<Route path='/checkout' element={<CheckoutPage />} />
 			</Route>
 		</Routes>
-	);
-}
-
-function Layout() {
-	return (
-		<div>
-			<nav>
-				<ul className='flex justify-between'>
-					<li>
-						<Link to='/'>Home</Link>
-					</li>
-					<li>
-						<Link to='/about'>About</Link>
-					</li>
-					<li>
-						<Link to='/dashboard'>Dashboard</Link>
-					</li>
-					<li>
-						<Link to='/nothing-here'>Nothing Here</Link>
-					</li>
-				</ul>
-			</nav>
-
-			<hr />
-			<Outlet />
-			<hr />
-			<footer>Footer</footer>
-		</div>
-	);
-}
-
-function Home() {
-	return (
-		<div>
-			<h2>Home</h2>
-		</div>
-	);
-}
-
-function About() {
-	return (
-		<div>
-			<h2>About</h2>
-		</div>
-	);
-}
-
-function Dashboard() {
-	return (
-		<div>
-			<h2>Dashboard</h2>
-		</div>
-	);
-}
-
-function NoMatch() {
-	return (
-		<div>
-			<h2>Nothing to see here!</h2>
-			<p>
-				<Link to='/'>Go to the home page</Link>
-			</p>
-		</div>
 	);
 }
