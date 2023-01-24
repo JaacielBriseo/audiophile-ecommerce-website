@@ -15,6 +15,9 @@ module.exports = {
 				White: '#FFFFFF',
 				VeryBlack: '#000000',
 			},
+			backgroundImage:{
+				HomeHero: 'url(assets/home/mobile/image-header.jpg)'
+			}
 		},
 	},
 	plugins: [],

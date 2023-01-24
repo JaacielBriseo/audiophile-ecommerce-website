@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons';
 
 export const Navbar = () => {
 	return (
-		<nav className='w-full h-28 bg-VeryBlack text-White flex flex-col justify-center'>
+		<nav className='w-full h-28 bg-VeryBlack text-White flex flex-col justify-center border-b border-[#979797]'>
 			<ul className='flex justify-around items-center'>
 				<li>
 					<HamburgerButton />
@@ -17,7 +17,7 @@ export const Navbar = () => {
 				</li>
 				<li>
 					<button>
-						<IconContext.Provider value={{size:'1.3em'}}>
+						<IconContext.Provider value={{ size: '1.3em' }}>
 							<HiOutlineShoppingCart />
 						</IconContext.Provider>
 					</button>

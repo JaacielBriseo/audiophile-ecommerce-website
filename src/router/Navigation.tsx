@@ -5,9 +5,7 @@ export const Navigation = () => {
 	return (
 		<>
 			<Navbar />
-			<hr />
 			<Outlet />
-			<hr />
 			<Footer />
 		</>
 	);
