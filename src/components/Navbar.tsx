@@ -1,20 +1,26 @@
 import { NavLink } from 'react-router-dom';
+import { HiOutlineShoppingCart } from 'react-icons/hi';
+import { HamburgerButton } from './HamburgerButton';
+import { IconContext } from 'react-icons';
 
 export const Navbar = () => {
 	return (
-		<nav>
-			<ul className='flex justify-between'>
+		<nav className='w-full h-28 bg-VeryBlack text-White flex flex-col justify-center'>
+			<ul className='flex justify-around items-center'>
 				<li>
-					<NavLink to='/'>Home</NavLink>
+					<HamburgerButton />
 				</li>
 				<li>
-					<NavLink to='category/headphones'>Headphones</NavLink>
+					<NavLink to='/' className='font-bold text-3xl tracking-wider'>
+						audiophile
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to='category/speakers'>Speakers</NavLink>
-				</li>
-				<li>
-					<NavLink to='category/earphones'>Earphones</NavLink>
+					<button>
+						<IconContext.Provider value={{size:'1.3em'}}>
+							<HiOutlineShoppingCart />
+						</IconContext.Provider>
+					</button>
 				</li>
 			</ul>
 		</nav>

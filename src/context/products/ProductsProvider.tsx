@@ -1,4 +1,4 @@
-import { ProductsContext } from './ProductsContext';
+import { ProductsContext } from '.';
 import products from '../../data/data.json';
 interface Props {
 	children: React.ReactElement | React.ReactElement[];
