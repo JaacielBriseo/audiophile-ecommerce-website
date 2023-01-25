@@ -1,4 +1,5 @@
 import { HeroSection, CategoriesSection, ProductsSection } from '.';
+import { AdvertisingSection } from '../components';
 
 export const HomePage = () => {
 	return (
@@ -6,6 +7,7 @@ export const HomePage = () => {
 			<HeroSection />
 			<CategoriesSection />
 			<ProductsSection />
+			<AdvertisingSection />
 		</>
 	);
 };

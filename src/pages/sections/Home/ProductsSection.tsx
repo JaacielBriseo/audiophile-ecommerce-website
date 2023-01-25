@@ -27,7 +27,7 @@ export const ProductsSection = () => {
 						<h1 className='font-bold text-3xl uppercase'>{zx7?.name}</h1>
 						<NavLink
 							to={`/product-detail/${zx7?.category}/${zx7?.id}`}
-							className='border border-VeryBlack py-3 font-black w-[75%] uppercase'>
+							className='border border-VeryBlack py-3 font-black w-[75%] uppercase text-center'>
 							see product
 						</NavLink>
 					</div>
