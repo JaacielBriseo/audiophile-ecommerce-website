@@ -1,10 +1,11 @@
-import { HeroSection, CategoriesSection } from '.';
+import { HeroSection, CategoriesSection, ProductsSection } from '.';
 
 export const HomePage = () => {
 	return (
 		<>
 			<HeroSection />
 			<CategoriesSection />
+			<ProductsSection />
 		</>
 	);
 };

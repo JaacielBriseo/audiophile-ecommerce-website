@@ -15,9 +15,11 @@ module.exports = {
 				White: '#FFFFFF',
 				VeryBlack: '#000000',
 			},
-			backgroundImage:{
-				HomeHero: 'url(assets/home/mobile/image-header.jpg)'
-			}
+			backgroundImage: {
+				HomeHero: 'url(assets/home/mobile/image-header.jpg)',
+				HomeSpeaker: 'url(assets/home/mobile/image-speaker-zx7.jpg)',
+				HomeEarphones:'url(assets/home/mobile/image-earphones-yx1.jpg)'
+			},
 		},
 	},
 	plugins: [],
