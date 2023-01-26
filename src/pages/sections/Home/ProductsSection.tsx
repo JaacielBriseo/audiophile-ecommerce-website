@@ -11,7 +11,7 @@ export const ProductsSection = () => {
 		<section className='p-5'>
 			<div className='space-y-5 grid grid-cols-1'>
 				<div className='h-[600px] bg-BurntOrange flex flex-col items-center justify-evenly rounded-md'>
-					<img src='assets/home/mobile/image-speaker-zx9.png' alt='speaker' className='w-44 h-52 ' />
+					<img src='/assets/home/mobile/image-speaker-zx9.png' alt='speaker' className='w-44 h-52 ' />
 					<h1 className='text-4xl text-White font-bold uppercase'>{zx9?.name}</h1>
 					<p className='font-medium text-gray-200 text-sm text-center'>
 						Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
