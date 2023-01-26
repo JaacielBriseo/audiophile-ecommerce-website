@@ -24,9 +24,9 @@ export const Footer = () => {
 				<p>Copyright 2021. All Rights Reserved</p>
 			</div>
 			<div className='flex w-[104px] h-6 mx-auto justify-between'>
-				<img src='assets/facebook.svg' alt='facebook' />
-				<img src='assets/twitter.svg' alt='twitter' />
-				<img src='assets/instagram.svg' alt='instagram' />
+				<img src='/assets/facebook.svg' alt='facebook' />
+				<img src='/assets/twitter.svg' alt='twitter' />
+				<img src='/assets/instagram.svg' alt='instagram' />
 			</div>
 		</div>
 	);

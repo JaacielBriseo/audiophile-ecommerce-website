@@ -1,19 +1,28 @@
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
+import { CategoryTitle, ProductCard } from '../components';
 import { ProductsContext } from '../context';
-
+enum CategoriesPaths {
+	Speakers = 'speakers',
+	Earphones = 'earphones',
+	Headphones = 'headphones',
+}
 export const CategoryPage = () => {
 	const { category } = useParams();
 	const { products } = useContext(ProductsContext);
-	const productToShow = products.filter(product => product.category === category);
+	const productsToShow = products.filter(product => product.category === category);
+	if (
+		category !== CategoriesPaths.Earphones &&
+		category !== CategoriesPaths.Headphones &&
+		category !== CategoriesPaths.Speakers
+	) {
+		return <h1>Not category found with this path: {category}</h1>;
+	}
+
 	return (
 		<div>
-			<h3>Category: {category}</h3>
-			<ul>
-				{productToShow.map(product => (
-					<li key={product.id}>{product.name}</li>
-				))}
-			</ul>
+			<CategoryTitle title={category} />
+			<ProductCard products={productsToShow} />
 		</div>
 	);
 };
