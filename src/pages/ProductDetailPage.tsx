@@ -1,10 +1,12 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
-import { ProductsContext } from '../context';
+import { CartContext, ProductsContext } from '../context';
 
 export const ProductDetailPage = () => {
+	const [productCount, setProductCount] = useState<number>(0);
 	const { category, id } = useParams();
 	const { products } = useContext(ProductsContext);
+	const { cart, setCart } = useContext(CartContext);
 	const product = products.find(product => product.category === category && product.id === Number(id));
 	if (!product) {
 		return (
@@ -25,11 +27,24 @@ export const ProductDetailPage = () => {
 					<p className='text-center font-medium text-[15px] leading-6 text-VeryBlack opacity-50'>
 						{product.description}
 					</p>
-					<NavLink
-						to={`/product-detail/${product.category}/${product.id}`}
-						className='py-3 px-6 uppercase bg-BurntOrange text-White font-bold text-xs'>
-						see product
-					</NavLink>
+					<div className='h-12 w-[296px] flex justify-between'>
+						<div className='w-[120px] h-full bg-VeryLightGrey flex items-center justify-around'>
+							<button onClick={() => setProductCount(current => Math.max(current - 1, 0))}>-</button>
+							{productCount}
+							<button onClick={() => setProductCount(current => current + 1)}>+</button>
+						</div>
+						<button
+							onClick={() =>
+								setCart({
+									...cart,
+									[product.id]: { ...product, count: productCount },
+								})
+							}
+							type='button'
+							className='w-[160px] h-full bg-BurntOrange text-White'>
+							add to cart
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
