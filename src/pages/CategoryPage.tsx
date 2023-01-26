@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { AdvertisingSection, CategoriesSection, CategoryTitle, ProductCard } from '../components';
+import { AdvertisingSection, CategoriesSection, CategoryTitle, ProductsByCategorySection } from '../components';
 import { ProductsContext } from '../context';
 enum CategoriesPaths {
 	Speakers = 'speakers',
@@ -22,7 +22,7 @@ export const CategoryPage = () => {
 	return (
 		<div>
 			<CategoryTitle title={category} />
-			<ProductCard products={productsToShow} />
+			<ProductsByCategorySection products={productsToShow} />
 			<CategoriesSection />
 			<AdvertisingSection />
 		</div>
