@@ -1,8 +1,14 @@
+export { AddToCartActionButtons } from './AddToCartActionButtons';
 export { AdvertisingSection } from './AdvertisingSection';
 export { CategoriesSection } from './CategoriesSection';
 export { CategoryTitle } from './CategoryTitle';
 export { Footer } from './Footer';
 export { HamburgerButton } from './HamburgerButton';
 export { Navbar } from './Navbar';
+export { NavigateToProductDetailButton } from './NavigateToProductDetailButton';
+export { ProductBox } from './ProductBox';
 export { ProductCard } from './ProductCard';
+export { ProductFeatures } from './ProductFeatures';
+export { ProductGallery } from './ProductGallery';
 export { ProductsByCategorySection } from './ProductsByCategorySection';
+export { RelatedProducts } from './RelatedProducts';
