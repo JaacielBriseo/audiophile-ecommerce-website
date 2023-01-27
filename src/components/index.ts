@@ -1,5 +1,7 @@
 export { AddToCartActionButtons } from './AddToCartActionButtons';
 export { AdvertisingSection } from './AdvertisingSection';
+export { CartModal } from './CartModal';
+export { CartModalContent } from './CartModalContent';
 export { CategoriesSection } from './CategoriesSection';
 export { CategoryTitle } from './CategoryTitle';
 export { Footer } from './Footer';

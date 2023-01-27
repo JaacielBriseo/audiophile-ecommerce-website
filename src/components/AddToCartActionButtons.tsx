@@ -17,12 +17,15 @@ export const AddToCartActionButtons: React.FC<Props> = ({ product }) => {
 			</div>
 			<button
 				disabled={productCount === 0}
-				onClick={() =>
-					setCart({
-						...cart,
-						[product.id]: { ...product, count: productCount },
-					})
-				}
+				onClick={() => {
+					const existingProduct = cart.find(p => p.id === product.id);
+					if (existingProduct) {
+						existingProduct.count += productCount;
+						setCart([...cart]);
+					} else {
+						setCart([...cart, { ...product, count: productCount }]);
+					}
+				}}
 				type='button'
 				className='w-[160px] h-full bg-BurntOrange text-White disabled:bg-opacity-70 disabled:cursor-not-allowed'>
 				add to cart

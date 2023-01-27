@@ -1,4 +1,4 @@
-import { CartContext } from './CartContext';
+import { CartContext, ProductInCart } from './CartContext';
 import { useState } from 'react';
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const CartProvider: React.FC<Props> = ({ children }) => {
-	const [cart, setCart] = useState({});
+	const [cart, setCart] = useState<[] | ProductInCart[]>([]);
 
 	return <CartContext.Provider value={{ cart, setCart }}>{children}</CartContext.Provider>;
 };
