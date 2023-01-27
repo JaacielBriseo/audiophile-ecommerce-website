@@ -1,5 +1,4 @@
-import { HeroSection, ProductsSection } from '.';
-import { AdvertisingSection, CategoriesSection } from '../components';
+import { AdvertisingSection, CategoriesSection, HeroSection, ProductsSection } from '../components';
 
 export const HomePage = () => {
 	return (

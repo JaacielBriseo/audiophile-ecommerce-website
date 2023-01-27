@@ -1,3 +1,6 @@
+import { HeroSection } from './HeroSection';
+export { HeroSection } from './HeroSection';
+export { ProductsSection } from './ProductsSection';
 export { AddToCartActionButtons } from './AddToCartActionButtons';
 export { AdvertisingSection } from './AdvertisingSection';
 export { CartModal } from './CartModal';

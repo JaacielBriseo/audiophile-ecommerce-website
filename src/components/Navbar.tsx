@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
 import { HamburgerButton } from './HamburgerButton';
 import { IconContext } from 'react-icons';
@@ -9,13 +9,18 @@ import { useCartContext } from '../hooks';
 export const Navbar = () => {
 	const [showCartModal, setShowCartModal] = useState<boolean>(false);
 	const { cart } = useCartContext();
+	const navigate = useNavigate();
 	const handleClose = () => {
 		setShowCartModal(false);
+	};
+	const goToCheckoutPage = () => {
+		setShowCartModal(false);
+		navigate('/checkout');
 	};
 	const actionBar = (
 		<button
 			disabled={cart.length === 0}
-			onClick={handleClose}
+			onClick={goToCheckoutPage}
 			className='text-White bg-BurntOrange mx-auto px-20 py-4 uppercase font-bold text-[13px] tracking-[1px] disabled:bg-opacity-60 disabled:cursor-not-allowed'>
 			Checkout
 		</button>
