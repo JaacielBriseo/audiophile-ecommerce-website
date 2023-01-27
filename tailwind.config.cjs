@@ -18,9 +18,12 @@ module.exports = {
 			backgroundImage: {
 				HomeHero: 'url(/assets/home/mobile/image-header.jpg)',
 				HomeSpeaker: 'url(/assets/home/mobile/image-speaker-zx7.jpg)',
-				HomeEarphones:'url(/assets/home/mobile/image-earphones-yx1.jpg)'
+				HomeEarphones: 'url(/assets/home/mobile/image-earphones-yx1.jpg)',
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/forms'),
+		// ...
+	],
 };

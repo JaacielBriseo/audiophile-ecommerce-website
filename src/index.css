@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply font-Manrope
-    }
+	html {
+		@apply font-Manrope;
+	}
 }
