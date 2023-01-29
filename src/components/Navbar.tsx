@@ -3,7 +3,7 @@ import { HiOutlineShoppingCart } from 'react-icons/hi';
 import { HamburgerButton } from './HamburgerButton';
 import { IconContext } from 'react-icons';
 import { useState } from 'react';
-import { CartModal, CartModalContent } from '.';
+import { Modal, CartModalContent } from '.';
 import { useCartContext } from '../hooks';
 
 export const Navbar = () => {
@@ -46,9 +46,9 @@ export const Navbar = () => {
 				</li>
 			</ul>
 			{showCartModal && (
-				<CartModal onClose={handleClose} actionBar={actionBar}>
+				<Modal onClose={handleClose} actionBar={actionBar}>
 					<CartModalContent />
-				</CartModal>
+				</Modal>
 			)}
 		</nav>
 	);

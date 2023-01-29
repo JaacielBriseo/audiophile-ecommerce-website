@@ -1,7 +1,9 @@
+export { ThanksModalContent } from './ThanksModalContent';
+
 export { Summary } from './Summary';
 export { AddToCartActionButtons } from './AddToCartActionButtons';
 export { AdvertisingSection } from './AdvertisingSection';
-export { CartModal } from './CartModal';
+export { Modal } from './Modal';
 export { CartModalContent } from './CartModalContent';
 export { CategoriesSection } from './CategoriesSection';
 export { CategoryTitle } from './CategoryTitle';
