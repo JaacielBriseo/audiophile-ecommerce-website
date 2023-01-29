@@ -51,3 +51,8 @@ export interface FormValues {
 	emoneyNumber: string;
 	emoneyPin: string;
 }
+
+export interface FormSectionsProps {
+	values: FormValues;
+	setFieldValue: (field: string, value: any, shouldValidate?: boolean | undefined) => void;
+}

@@ -1,5 +1,5 @@
 import { ErrorMessage } from 'formik';
-import { useCheckoutInput } from '../hooks';
+import { useCheckoutInput } from '../../hooks';
 interface Props {
 	name: string;
 	placeholder: string;

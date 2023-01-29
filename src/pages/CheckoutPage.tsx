@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {CheckoutForm} from '../components'
+import { CheckoutForm } from '../components';
 
 export const CheckoutPage = () => {
 	const navigate = useNavigate();
@@ -8,7 +8,7 @@ export const CheckoutPage = () => {
 			<button onClick={() => navigate(-1)} className='text-[15px] text-VeryBlack opacity-50 cursor-pointer'>
 				Go back
 			</button>
-      <CheckoutForm/>
+			<CheckoutForm />
 		</div>
 	);
 };
