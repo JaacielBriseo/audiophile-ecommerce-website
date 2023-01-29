@@ -9,7 +9,7 @@ export const ProductGallery: React.FC<Props> = ({ gallery }) => {
 			{Object.values(gallery).map((image, index) => (
 				<img
 					src={image.mobile}
-					alt='Product Photo'
+					alt='Product'
 					key={image.mobile}
 					className={`${index === Object.values(gallery).length - 1 ? 'row-span-2' : 'row-span-1'} rounded-md`}
 				/>

@@ -1,3 +1,4 @@
+export { Summary } from './Summary';
 export { AddToCartActionButtons } from './AddToCartActionButtons';
 export { AdvertisingSection } from './AdvertisingSection';
 export { CartModal } from './CartModal';
