@@ -1,5 +1,5 @@
-import { Product } from '../interfaces';
-import { AddToCartActionButtons, NavigateToProductDetailButton } from '.';
+import { Product } from '../../interfaces';
+import { AddToCartActionButtons, NavigateToProductDetailButton } from '..';
 import { useNavigate } from 'react-router-dom';
 interface Props {
 	product: Product;

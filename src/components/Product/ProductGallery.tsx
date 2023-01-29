@@ -1,4 +1,4 @@
-import { Gallery } from '../interfaces';
+import { Gallery } from '../../interfaces';
 
 interface Props {
 	gallery: Gallery;

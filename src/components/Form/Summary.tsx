@@ -1,8 +1,8 @@
 import { useFormikContext } from 'formik';
-import { useCartContext } from '../hooks';
+import { useCartContext } from '../../hooks';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { ThanksModalContent, Modal } from '.';
+import { ThanksModalContent, Modal } from '..';
 
 export const Summary = () => {
 	const { cart } = useCartContext();

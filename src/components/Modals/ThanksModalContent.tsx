@@ -1,4 +1,4 @@
-import { useCartContext } from '../hooks';
+import { useCartContext } from '../../hooks';
 export const ThanksModalContent = () => {
 	const { cart } = useCartContext();
 	let options = {

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Product } from '../interfaces';
+import { Product } from '../../interfaces';
 interface Props {
 	product: Product;
 }

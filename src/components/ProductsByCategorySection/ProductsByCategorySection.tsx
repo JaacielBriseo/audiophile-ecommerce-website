@@ -1,5 +1,5 @@
-import { Product } from '../interfaces';
-import { ProductCard } from '.';
+import { Product } from '../../interfaces';
+import { ProductCard } from '..';
 interface Props {
 	products: Product[];
 }

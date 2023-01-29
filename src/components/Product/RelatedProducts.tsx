@@ -1,7 +1,7 @@
-import { Other } from '../interfaces';
-import { findProductBySlug } from '../helpers';
+import { Other } from '../../interfaces';
+import { findProductBySlug } from '../../helpers';
 import { useContext } from 'react';
-import { ProductsContext } from '../context';
+import { ProductsContext } from '../../context';
 import { NavLink } from 'react-router-dom';
 
 interface Props {

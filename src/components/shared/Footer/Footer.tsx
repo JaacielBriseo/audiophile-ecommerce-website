@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { footerLinks } from '../constants';
+import { footerLinks } from '../../../constants';
 
 export const Footer = () => {
 	return (

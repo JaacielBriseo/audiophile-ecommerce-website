@@ -1,4 +1,4 @@
-import { Include } from '../interfaces';
+import { Include } from '../../interfaces';
 interface Props {
 	includes: Include[];
 }

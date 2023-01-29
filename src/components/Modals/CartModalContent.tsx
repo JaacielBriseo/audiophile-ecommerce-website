@@ -1,4 +1,4 @@
-import { useCart } from '../hooks';
+import { useCart } from '../../hooks';
 
 export const CartModalContent = () => {
 	const { cart, decrementProductCount, incrementProductCount, removeAllProductsFromCart } = useCart();

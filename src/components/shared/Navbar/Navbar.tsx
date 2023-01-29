@@ -3,8 +3,8 @@ import { HiOutlineShoppingCart } from 'react-icons/hi';
 import { HamburgerButton } from './HamburgerButton';
 import { IconContext } from 'react-icons';
 import { useState } from 'react';
-import { Modal, CartModalContent } from '.';
-import { useCartContext } from '../hooks';
+import { Modal, CartModalContent } from '../..';
+import { useCartContext } from '../../../hooks';
 
 export const Navbar = () => {
 	const [showCartModal, setShowCartModal] = useState<boolean>(false);

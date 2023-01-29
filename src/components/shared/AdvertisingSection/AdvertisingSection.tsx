@@ -1,4 +1,4 @@
-import { advertisingData } from '../constants';
+import { advertisingData } from '../../../constants';
 
 export const AdvertisingSection = () => {
 	const titleWords = advertisingData.title.split(' ');

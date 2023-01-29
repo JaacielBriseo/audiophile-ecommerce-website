@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { GoChevronRight } from 'react-icons/go';
-import { categoriesData } from '../constants';
+import { categoriesData } from '../../../constants';
 
 export const CategoriesSection = () => {
 	return (

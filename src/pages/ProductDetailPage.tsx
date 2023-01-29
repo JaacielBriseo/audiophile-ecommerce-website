@@ -1,19 +1,10 @@
-import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import {
-	AdvertisingSection,
-	CategoriesSection,
-	ProductBox,
-	ProductCard,
-	ProductFeatures,
-	ProductGallery,
-	RelatedProducts,
-} from '../components';
-import { ProductsContext } from '../context';
+import { AdvertisingSection, CategoriesSection, Product } from '../components';
+import { useProductsContext } from '../hooks';
 
 export const ProductDetailPage = () => {
 	const { category, id } = useParams();
-	const { products } = useContext(ProductsContext);
+	const { products } = useProductsContext();
 	const product = products.find(product => product.category === category && product.id === Number(id));
 	if (!product) {
 		return (
@@ -24,11 +15,7 @@ export const ProductDetailPage = () => {
 	}
 	return (
 		<div className='p-5 space-y-24'>
-			<ProductCard product={product} renderingInPage='product' />
-			<ProductFeatures features={product.features} />
-			<ProductBox includes={product.includes} />
-			<ProductGallery gallery={product.gallery} />
-			<RelatedProducts relatedProducts={product.others} />
+			<Product product={product} />
 			<CategoriesSection />
 			<AdvertisingSection />
 		</div>

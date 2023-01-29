@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import { ProductsContext } from '../context';
+import { ProductsContext } from '../../context';
 import { NavLink } from 'react-router-dom';
-import { findProductByName } from '../helpers';
+import { findProductByName } from '../../helpers';
 export const ProductsSection = () => {
 	const { products } = useContext(ProductsContext);
 	const zx9 = findProductByName(products,'zx9')
