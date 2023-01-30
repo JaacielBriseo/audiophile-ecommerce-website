@@ -1,9 +1,9 @@
 import { Field, useFormikContext } from 'formik';
 import { CheckoutInput } from '..';
-import { FormSectionsProps, FormValues } from '../../interfaces';
+import {  FormValues } from '../../interfaces';
 
-export const PaymentDetails: React.FC<Omit<FormSectionsProps, 'values'>> = ({ setFieldValue }) => {
-	const { values } = useFormikContext<FormValues>();
+export const PaymentDetails= () => {
+	const { values, setFieldValue } = useFormikContext<FormValues>();
 	return (
 		<div className='space-y-4'>
 			<h3 className='text-BurntOrange font-bold text-[13px]'>Payment Details</h3>

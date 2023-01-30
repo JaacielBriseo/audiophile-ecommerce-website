@@ -23,9 +23,9 @@ export const CheckoutPage = () => {
 				Go back
 			</button>
 			<Formik initialValues={formData} onSubmit={console.log}>
-				{({ setFieldValue }) => (
+				{() => (
 					<>
-						<CheckoutForm setFieldValue={setFieldValue} />
+						<CheckoutForm />
 						<Summary />
 					</>
 				)}

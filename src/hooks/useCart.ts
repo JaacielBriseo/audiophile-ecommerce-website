@@ -3,6 +3,14 @@ import { CartContext } from '../context';
 
 export const useCart = () => {
 	const { cart, setCart } = useContext(CartContext);
+	let options = {
+		style: 'decimal',
+		minimumFractionDigits: 2,
+		maximumFractionDigits: 2,
+	};
+	const totalWithFormat = new Intl.NumberFormat('en-US', options).format(
+		cart.reduce((acc, item) => acc + item.price * item.count, 0)
+	);
 	const incrementProductCount = (id: number) => {
 		setCart(currentCart => {
 			const updatedCart = currentCart.map(item => {
@@ -33,6 +41,7 @@ export const useCart = () => {
 		cart,
 		decrementProductCount,
 		incrementProductCount,
-    removeAllProductsFromCart
+		removeAllProductsFromCart,
+		totalWithFormat,
 	};
 };

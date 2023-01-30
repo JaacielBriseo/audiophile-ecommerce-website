@@ -8,10 +8,11 @@ export const AddToCartActionButtons: React.FC<Props> = ({ product }) => {
 	const [productCount, setProductCount] = useState<number>(0);
 	const { cart, setCart } = useCartContext();
 	const handleAddToCart = () => {
-		const existingProduct = cart.find(p => p.id === product.id);
-		if (existingProduct) {
-			existingProduct.count += productCount;
-			setCart([...cart]);
+		const existingProductIndex = cart.findIndex(p => p.id === product.id);
+		if (existingProductIndex !== -1) {
+			const updatedCart = [...cart];
+			updatedCart[existingProductIndex].count += productCount;
+			setCart(updatedCart);
 		} else {
 			setCart([...cart, { ...product, count: productCount }]);
 		}
