@@ -8,3 +8,14 @@
 		@apply font-Manrope;
 	}
 }
+
+.btnPrimary {
+	@apply bg-BurntOrange uppercase py-3 px-7 text-White font-bold text-[13px] leading-5 tracking-[1px] hover:drop-shadow-md hover:brightness-110;
+}
+
+.btnSecondary {
+	@apply bg-VeryBlack uppercase py-4 px-9 text-White font-bold text-[13px] leading-5 tracking-[1px] hover:drop-shadow-md hover:brightness-110;
+}
+.btnDefault {
+	@apply border border-VeryBlack py-3 font-black w-[75%] uppercase text-center;
+}

@@ -56,3 +56,7 @@ export interface FormSectionsProps {
 	values: FormValues;
 	setFieldValue: (field: string, value: any, shouldValidate?: boolean | undefined) => void;
 }
+export interface WindowSize {
+  width: number | undefined;
+  height: number | undefined;
+}

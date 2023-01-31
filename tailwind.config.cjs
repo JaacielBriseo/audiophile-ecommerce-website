@@ -17,7 +17,9 @@ module.exports = {
 			},
 			backgroundImage: {
 				HomeHero: 'url(/assets/home/mobile/image-header.jpg)',
+				HomeHeroTablet: 'url(/assets/home/tablet/image-header.jpg)',
 				HomeSpeaker: 'url(/assets/home/mobile/image-speaker-zx7.jpg)',
+				HomeSpeakerTablet: 'url(/assets/home/tablet/image-speaker-zx7.jpg)',
 				HomeEarphones: 'url(/assets/home/mobile/image-earphones-yx1.jpg)',
 			},
 		},

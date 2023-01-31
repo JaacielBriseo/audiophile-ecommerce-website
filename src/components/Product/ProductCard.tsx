@@ -1,6 +1,6 @@
+import { useNavigate } from 'react-router-dom';
 import { Product } from '../../interfaces';
 import { AddToCartActionButtons, NavigateToProductDetailButton } from '..';
-import { useNavigate } from 'react-router-dom';
 interface Props {
 	product: Product;
 	renderingInPage: 'category' | 'product';
