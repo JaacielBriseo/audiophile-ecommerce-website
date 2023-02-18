@@ -27,13 +27,16 @@ export const Navbar = () => {
 	);
 
 	return (
-		<nav className='w-full h-28 bg-VeryBlack text-White flex flex-col justify-center border-b border-[#979797]'>
-			<ul className='flex justify-around items-center'>
-				<li>
+		<nav className='w-full h-28 bg-VeryBlack text-White flex flex-col justify-center border-b border-[#9797973d]'>
+			<ul className='flex justify-around items-center md:justify-between md:w-11/12 md:mx-auto'>
+				<li className='flex space-x-10'>
 					<HamburgerButton />
+					<NavLink to='/' className='hidden font-bold text-3xl tracking-wider md:block'>
+						audiophile
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to='/' className='font-bold text-3xl tracking-wider'>
+					<NavLink to='/' className='font-bold text-3xl tracking-wider md:hidden'>
 						audiophile
 					</NavLink>
 				</li>

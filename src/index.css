@@ -5,7 +5,7 @@
 
 @layer base {
 	html {
-		@apply font-Manrope;
+		@apply font-Manrope scroll-smooth;
 	}
 }
 
